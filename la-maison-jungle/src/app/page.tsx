@@ -1,5 +1,13 @@
+
+import Navbar from "./components/navbar"
+
+
+
 export default function Home() {
   return (
-<p>TEST</p>
+    <>
+    <Navbar/>
+      <p>Le main content</p>
+    </>
   )
 }

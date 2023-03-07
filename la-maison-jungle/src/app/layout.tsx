@@ -1,3 +1,5 @@
+import  "../app/global.scss"
+import '../app/styles/navbar.scss'
 
 export const metadata = {
   title: 'Create Next App',
