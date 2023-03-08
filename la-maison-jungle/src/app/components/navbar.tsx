@@ -4,6 +4,14 @@ import menu from 'public/icons8-menu-arrondi-60.png'
 import logo from 'public/leaf+1.png'
 import close from 'public/icons8-multiplier-30.png'
 
+import { useState } from 'react';
+
+
+// const [open, setOpen] = useState(false);
+const [count, setCount] = useState(0);
+
+
+
 
 
 export default function Navbar() {
@@ -20,7 +28,7 @@ export default function Navbar() {
 
                 </ul>
                 <div className='nav-border'></div>
-                <ul className="nav-secondary open">
+                <ul className={"nav-secondary"}>
                     <li><Image src={close} alt="test"/></li>
                     <li><Link href="/">Plante intérieur</Link></li>
                     <li><Link href="/">Terarium</Link></li>
@@ -32,3 +40,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+

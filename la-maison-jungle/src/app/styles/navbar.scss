@@ -1,3 +1,9 @@
+nav {
+    box-shadow: 0 1px rgb(218, 226, 225);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 nav .container {
     width: 100%;
     margin: auto;
@@ -11,7 +17,8 @@ nav .nav-first {
     li button {
         display: none;
     }
-    .nav__first-title{
+
+    .nav__first-title {
         display: flex;
         border: 2px solid red;
     }
@@ -100,6 +107,10 @@ nav .nav-secondary {
 
 // // Responsive Tablette // //
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+        padding: 0px;
+    }
+
     nav .container {
         max-width: 100%;
     }
@@ -171,6 +182,9 @@ nav .nav-secondary {
 // // Responsive MOBILE // //
 
 @media only screen and (max-width: 576px) {
+    nav {
+        padding: 0px;
+    }
 
     nav .container {
         max-width: 100%;
