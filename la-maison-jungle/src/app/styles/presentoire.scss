@@ -1,0 +1,43 @@
+$image1: url('../assets/idee_deco_plante_interieur_salon_bbdb9f36-f0ed-4b01-9cc2-510ec7273307.jpeg');
+$image2: url('../assets/kokedama_livraison_collection.webp');
+$image3: url('../assets/kokedama_livraison_collection.webp');
+
+
+
+
+$background-images: url('../assets/idee_deco_plante_interieur_salon_bbdb9f36-f0ed-4b01-9cc2-510ec7273307.jpeg') 0%, url('../assets/kokedama_livraison_collection.webp') 50%, url('../assets/livraison_terrarium_france.webp') 100%,;
+
+
+
+@keyframes slideshow {
+  0% { background-image: url('../assets/idee_deco_plante_interieur_salon_bbdb9f36-f0ed-4b01-9cc2-510ec7273307.jpeg'); }
+  50% { background-image: url('../assets/kokedama_livraison_collection.webp'); }
+  100% { background-image: url('../assets/kokedama_livraison_collection.webp'); }
+}
+
+.presentoire .container {
+    border: 2px solid red;
+    background-image: $background-images;
+    animation: slideshow 25s infinite;
+    height: 1000px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-size: 100vw 155vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    h2{
+        font-family: "Avenir Next", sans-serif;
+        position: relative;
+        top: 20%;
+        font-size: 58px;
+        letter-spacing: -.9px;
+        color: rgb(255,255,255);
+        font-weight: 400;
+        width: 560px;
+        margin: auto;
+        border: 2px solid red;
+        text-align: center;
+    }
+ 
+}

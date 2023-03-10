@@ -2,6 +2,8 @@ nav {
     box-shadow: 0 1px rgb(218, 226, 225);
     padding-left: 40px;
     padding-right: 40px;
+    position: relative;
+    z-index: 1000;
 }
 
 nav .container {
