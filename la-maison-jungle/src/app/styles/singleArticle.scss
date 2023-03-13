@@ -1,12 +1,55 @@
-
-
-.article .article__container{
+.article .article__container {
     display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
 }
 
-.article .article__container .article__container__image{
+.article .article__container .article__container__image {
     border: 2px solid red;
-    width: 384px;
-    height: 480px;
+    width: 600px;
+    height: 1200px;
     border-radius: 5px;
+}
+
+.article .article__container .article__container__content {
+    border: 2px solid green;
+    width: 600px;
+    height: 1200px;
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+
+    .price {
+        font-size: 24px;
+        margin-bottom: 30px;
+
+        //OPTIMA NOVA SANS SERRIF
+        span {
+            margin-left: 3px;
+        }
+    }
+
+    .description {
+        width: 400px;
+        margin-bottom: 70px;
+    }
+
+    button {
+        padding-left: 35px;
+        padding-right: 35px;
+        letter-spacing: 2px;
+        font-size: 13px;
+        background-color:#f5f1ec;
+        height: 52px;
+        width: 100%;
+        border-radius: 3px;
+        text-transform: uppercase;
+        
+    }
 }

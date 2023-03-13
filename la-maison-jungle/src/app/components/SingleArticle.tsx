@@ -15,9 +15,9 @@ export default function SingleArticle() {
           <Image src={logo} alt="test" width={30} height={30} />
         </div>
         <div className='article__container__content'>
-          <h3>{article[1].name}</h3>
-          <p>{article[1].price}</p>
-          <p>{article[1].description}</p>
+          <h1>{article[1].name}</h1>
+          <p className='price'>{article[1].price}<span>e</span></p>
+          <p className='description'>{article[1].description}</p>
           <button>Ajouter au panier</button>
         </div>
       </div>
