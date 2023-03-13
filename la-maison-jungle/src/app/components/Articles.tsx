@@ -7,9 +7,6 @@ export default function Articles() {
             <section className='articles'>
               <p>test les articles iciD</p>
               <SingleArticle/>
-              <SingleArticle/>
-              <SingleArticle/>
-              <SingleArticle/>
             </section>
 
     )

@@ -1,0 +1,12 @@
+
+
+.article .article__container{
+    display: flex;
+}
+
+.article .article__container .article__container__image{
+    border: 2px solid red;
+    width: 384px;
+    height: 480px;
+    border-radius: 5px;
+}
