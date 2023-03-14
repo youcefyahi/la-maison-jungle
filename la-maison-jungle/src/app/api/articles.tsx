@@ -3,7 +3,7 @@ import { Articles } from "@/models/type";
 
 const article: Articles[] = [
     {
-        id: 1,
+        id:0,
         name: "Strelitzia nicolai XL",
         price:199,
         description: " Le Ceropegia est surnommé la chaîne de coeur à cause de la forme de ses petites feuilles gorgées d'eau.",

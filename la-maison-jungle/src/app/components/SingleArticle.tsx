@@ -2,11 +2,13 @@ import '../styles/singleArticle.scss'
 import article from '../api/articles'
 import Image from 'next/image'
 import logo from 'public/leaf+1.png'
+import { Articles } from '@/models/type';
 
 
 
 
-export default function SingleArticle() {
+export const SingleArticle:React.FC<Articles> = ({id}) => {
+  const selectedArticle = article.find(item => item.id === id);
 
   return (
     <div className='article'>
@@ -15,13 +17,13 @@ export default function SingleArticle() {
           <Image src={logo} alt="test" width={30} height={30} />
         </div>
         <div className='article__container__content'>
-          <h1>{article[0].name}</h1>
-          <p className='price'>{article[0].price}<span>e</span></p>
-          <p className='garantie'>{article[0].garantie}</p>
-          <p>{article[0].promotion}</p>
-          <p className='livraison'>{article[0].livraison}</p>
-          <p>{article[0].description}</p>
-          <p className='taille'>{article[0].taille}</p>
+          <h1>{selectedArticle?.name}</h1>
+          <p className='price'>{selectedArticle?.price}<span>e</span></p>
+          <p className='garantie'>{selectedArticle?.garantie}</p>
+          <p>{selectedArticle?.promotion}</p>
+          <p className='livraison'>{selectedArticle?.livraison}</p>
+          <p>{selectedArticle?.description}</p>
+          <p className='taille'>{selectedArticle?.taille}</p>
           <button>Ajouter au panier</button>
         </div>
       </div>
@@ -29,3 +31,6 @@ export default function SingleArticle() {
 
   )
 }
+
+
+export default SingleArticle;
