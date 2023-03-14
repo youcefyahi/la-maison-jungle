@@ -1,13 +1,16 @@
 import '../styles/articles.scss'
-import SingleArticle from './SingleArticle'
+import ArticlesList from './ArticleList'
 
-export default function Articles() {
+
+
+export const Articles:React.FC<> =({}) => {
  
     return (
             <section className='articles'>
-              <p>test les articles iciD</p>
-                <SingleArticle id={0}/>
+         <ArticlesList/>
             </section>
 
     )
 }
+
+export default Articles

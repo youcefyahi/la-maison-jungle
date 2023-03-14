@@ -12,8 +12,6 @@ export default function Home() {
       <Navbar/>
       {/* <Presentoire/> */}
       <Articles/>
-
-      <p>Le main content</p>
     </>
   )
 }
