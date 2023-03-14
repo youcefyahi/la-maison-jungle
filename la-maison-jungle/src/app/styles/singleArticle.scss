@@ -1,6 +1,5 @@
 .article {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0px 40px;
 }
 
 .article .article__container {
@@ -32,7 +31,8 @@
         font-size: 32px;
         margin-bottom: 24px;
     }
-    p{
+
+    p {
         margin: 0px;
         line-height: 32px;
     }
@@ -73,4 +73,112 @@
         border: none;
 
     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .article .article__container {
+        display: block;
+        margin: 0px;
+    }
+
+    .article .article__container .article__container__image {
+        width: 688px;
+        height: 860px;
+        margin-bottom: 24px;
+    }
+
+    .article .article__container .article__container__content {
+        width: 100%;
+        border: 2px solid red;
+
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 24.9px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .price {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .garantie {
+            margin-bottom: 16px;
+        }
+
+        .livraison {
+            margin-bottom: 16px;
+        }
+
+        .taille {
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 0px 35px;
+            width: 100%;
+        }
+    }
+
+
+
+}
+
+@media only screen and (max-width: 576px) { 
+
+    .article{
+        padding: 0px 24px;
+    }
+    .article .article__container {
+        display: block;
+        margin: 0px;
+    }
+
+    .article .article__container .article__container__image {
+        max-width: 100%;
+        height: 405.625px;
+        margin-bottom: 24px;
+    }
+
+    .article .article__container .article__container__content {
+        width: 100%;
+        border: 2px solid red;
+
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 21.58px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .garantie {
+            margin-bottom: 16px;
+        }
+
+        .livraison {
+            margin-bottom: 16px;
+        }
+
+        .taille {
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 0px 30px;
+            width: 100%;
+        }
+    }
+
 }
