@@ -1,5 +1,32 @@
-.articles-list{
-    border: 2px solid green;
-    width: 208.66px;
-    height: 373.33px;
+.articles-list {
+
+    width: 245.75px;
+    height: 419.69px;
+    text-align: center;
+}
+
+.articles-list a {
+    height: 208.66px;
+    width: 373.33px;
+    text-align: center;
+    text-decoration: none;
+  img{
+    object-fit: cover;
+    object-position: center;
+    height:309.9px;
+    width: 245.75px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    
+  }
+  p{
+
+    font-size: 15px;
+    margin:  0px 0px 4px;
+    color: black;
+
+
+  }
 }
