@@ -1,17 +1,13 @@
 import Navbar from "./components/navbar"
 import Presentoire from "./components/presentoir"
-import Articles from "./components/Articles"
-
-
-
-
+import ArticlesSection from "./components/ArticlesSection"
 
 export default function Home() {
   return (
     <>
       <Navbar/>
       {/* <Presentoire/> */}
-      <Articles/>
+      <ArticlesSection/>
     </>
   )
 }

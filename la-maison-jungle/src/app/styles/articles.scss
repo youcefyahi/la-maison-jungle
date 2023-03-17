@@ -1,6 +1,58 @@
-.articles{
-    display: flex;
-    justify-content: space-between;
+.articles {
     max-width: 1230px;
     margin: auto;
 }
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .articles {
+        margin: auto;
+        max-width: 1200px;
+        border: 2px solid red;
+    }
+
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .articles {
+     
+        margin: auto;
+    }
+    
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .articles {
+     
+        margin: auto;
+        max-width: 480px;
+    }
+    
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+}
+
