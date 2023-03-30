@@ -7,8 +7,8 @@ import { Articles } from '@/models/type';
 
 
 
-export const SingleArticle:React.FC<Articles> = ({id}) => {
-  const selectedArticle = article.find(item => item.id === id);
+export const SingleArticle:React.FC<Articles> = ({name}) => {
+ 
 
   return (
     <div className='article'>
@@ -17,13 +17,8 @@ export const SingleArticle:React.FC<Articles> = ({id}) => {
           <Image src={logo} alt="test" width={30} height={30} />
         </div>
         <div className='article__container__content'>
-          <h1>{selectedArticle?.name}</h1>
-          <p className='price'>{selectedArticle?.price}<span>e</span></p>
-          <p className='garantie'>{selectedArticle?.garantie}</p>
-          <p>{selectedArticle?.promotion}</p>
-          <p className='livraison'>{selectedArticle?.livraison}</p>
-          <p>{selectedArticle?.description}</p>
-          <p className='taille'>{selectedArticle?.taille}</p>
+          <h1>{name}ici</h1>
+    
           <button>Ajouter au panier</button>
         </div>
       </div>

@@ -49,8 +49,8 @@ const article: Articles[] = [
         livraison:"Livraison offerte à partir de 70€ d'achat, en 24h ou à la date souhaitée",
         taille:"Diamètre 8cm / Hauteur : 0cm",
         arrosage:"Une fois par mois",
-    },
+    }
 
- ]
+ ];
 
  export default article

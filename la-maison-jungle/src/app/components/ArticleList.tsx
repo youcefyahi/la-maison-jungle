@@ -10,12 +10,14 @@ import { Articles } from '@/models/type';
 
 
 
+
 export const ArticlesList: React.FC<Articles> = ({id}) => {
     const selectedArticle = article.find(item => item.id === id);
     return (
         <div className='articles-list'>
-            <Link href="/">
+            <Link href={`/plante/${selectedArticle?.id}`}>
                 <Image src={truc} alt='mettre image ici plus tard la faire border' /> <p>{selectedArticle?.name}</p></Link>
+            
             <p>{selectedArticle?.price}ê</p>
 
         </div>
