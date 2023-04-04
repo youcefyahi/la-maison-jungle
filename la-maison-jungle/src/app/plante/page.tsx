@@ -1,17 +1,24 @@
 import {getUsers} from 'lib/prisma/users.js'
+import {getPlantes} from 'lib/prisma/plantes.js'
+
  
 const Page = async ()=> {
    const{users} = await getUsers()
-   console.log(users)
+  
+   const{plantes} = await getPlantes()
+   console.log(plantes)
+   
    
 
 
    return(
-      <>
-        {users?.map(user=>{<p>{user.name}</p>})}
-      
-      </>
-    
+      <ul>
+      {users?.map(user => (
+        <li key={user.id}>
+          <h3>{user.name}</h3>
+        </li>
+      ))}
+    </ul>
    )
 }
 
