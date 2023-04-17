@@ -1,4 +1,4 @@
-import  "../app/global.scss"
+
 
 
 export const metadata = {

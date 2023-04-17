@@ -12,7 +12,7 @@ const PlantePage: NextPage<Articles> = ({id }) => {
   return (
     <div>
 
-
+<p>test</p>
     </div>
   );
 };

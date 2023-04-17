@@ -4,21 +4,15 @@ import article from '../api/articles'
 import truc from "../assets/areca.jpeg"
 import Image from 'next/image'
 import { Articles } from '@/models/type';
+import { Plante } from '@prisma/client'
 
-
-
-
-
-
-
-export const ArticlesList: React.FC<Articles> = ({id}) => {
-    const selectedArticle = article.find(item => item.id === id);
+export const ArticlesList: React.FC<Plante> = ({name,price}) => {
     return (
         <div className='articles-list'>
-            <Link href={`/plante/${selectedArticle?.id}`}>
-                <Image src={truc} alt='mettre image ici plus tard la faire border' /> <p>{selectedArticle?.name}</p></Link>
+            <Link href={`/plante/${name}`}>
+                <Image src={truc} alt='mettre image ici plus tard la faire border' /> <p>{name}</p></Link>
             
-            <p>{selectedArticle?.price}ê</p>
+            <p>{price}ê</p>
 
         </div>
 
