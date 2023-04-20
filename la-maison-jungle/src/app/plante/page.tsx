@@ -8,7 +8,7 @@ const Page = async () => {
 
   const { plantes } = await getPlantes()
 
-  const id = '642c3975bed69a3d37d271e0'
+  const id = '643d636b5e1c7df162261d58'
   const un = await getOnePlante(id)
   console.log(un.plante)
 

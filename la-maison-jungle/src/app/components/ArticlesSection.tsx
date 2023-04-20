@@ -11,7 +11,7 @@ const ArticlesSection = async () =>{
         <section className='articles'>
             <div className='articles-container'>
             {plantes?.map((plante) => (
-                    <ArticlesList key={plante.id} name={plante.name} description={plante.description} price={plante.price}/>
+                    <ArticlesList key={plante.id} name={plante.name} id={plante.id} price={plante.price}/>
                 ))}
             </div>
 

@@ -5,7 +5,6 @@ import { getPlantes } from "lib/prisma/plantes"
 
 export default function Home() {
 
-
   return (
     <>
       <Navbar/>
