@@ -1,7 +1,7 @@
 import '../styles/articlesList.scss'
 import Link from 'next/link'
 import article from '../api/articles'
-import truc from "../assets/areca.jpeg"
+import truc from "src/app/assets/areca.jpeg"
 import Image from 'next/image'
 import { Articles } from '@/models/type';
 import { Plante } from '@prisma/client'
