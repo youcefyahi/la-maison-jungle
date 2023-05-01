@@ -1,44 +1,33 @@
 
-import { Articles } from '@/models/type';
-import { NextPage, } from 'next';
-import article from "@/app/api/articles";
-import { Plante } from "@prisma/client";
-import SingleArticle from "@/app/components/SingleArticle";
-
-import { getOnePlante } from 'lib/prisma/plantes';
-
-
+import { getOnePlante } from 'lib/prisma/plantes'
+import Plante from './plante'
  
-
-// const PlantePage: NextPage<> =  () => {
-  
-//   const Test = async () => {
-//       const router = usePathname()
-//       const id = router.split('/').pop();
-//     console.log(id)
-//   }
-
-//   useEffect(()=>{
-//     Test()
-//   })
+// const PlantePage = async () => {
 
 
 //   return (
 //     <div>
-
 //       <SingleArticle />
 //     </div>
 //   );
 // };
-const PlantePage: NextPage<> = ({  }) => {
+
+import { PrismaClient } from '@prisma/client'
+import { useEffect, useState } from 'react'
 
 
-  return (
-    <div>
-      <SingleArticle />
-    </div>
-  );
-};
+
+const Page = async ({params}) =>{
+  const {plante} = await getOnePlante(params.planteId)
+  return(
+    <Plante plante={plante}/>
+  )
+}
+
+export default Page
+
+
+
 
 
 
@@ -78,7 +67,4 @@ const PlantePage: NextPage<> = ({  }) => {
 //     </>
 //   )
 // }
-
-export default PlantePage
-
 
