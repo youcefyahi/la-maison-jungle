@@ -8,7 +8,11 @@ import { Plante } from '@prisma/client'
 
 export const ArticlesList: React.FC<Plante> = ({name,price,id}) => {
     return (
+
+
         <div className='articles-list'>
+
+    
             <Link href={`/plante/${id}`}>
                 <Image src={truc} alt='mettre image ici plus tard la faire border' /> <p>{name}</p></Link>
             

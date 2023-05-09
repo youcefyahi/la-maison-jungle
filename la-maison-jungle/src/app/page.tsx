@@ -5,14 +5,17 @@ import { getPlantes } from "lib/prisma/plantes"
 
 export default function Home() {
 
+
   return (
     <>
       <Navbar/>
       {/* <Presentoire/> */}
       <ArticlesSection/>
-   
+
+    
     </>
   )
+  
 }
 
 
