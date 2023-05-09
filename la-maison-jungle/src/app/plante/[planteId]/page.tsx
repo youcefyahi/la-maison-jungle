@@ -14,13 +14,18 @@ import Plante from './plante'
 
 import { PrismaClient } from '@prisma/client'
 import { useEffect, useState } from 'react'
-
+import { Provider } from 'react-redux';
 
 
 const Page = async ({params}) =>{
   const {plante} = await getOnePlante(params.planteId)
+
+
+
   return(
+ 
     <Plante plante={plante}/>
+
   )
 }
 

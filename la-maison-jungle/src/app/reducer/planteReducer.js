@@ -5,16 +5,19 @@ const panierState = {
 };
 
 export const cartSlice = createSlice({
-  name: 'cart',
-  panierState,
+  name: 'panier',
+  initialState:panierState,
   reducers: {
     addPanier: (state, action) => {
-      const itemIndex = state.items.findIndex(item => item.id === action.payload.id);
+      const id = action.payload?.id
+      const itemIndex = state.items.findIndex(item => item.id === (id ? id : action.payload));
+
       if (itemIndex >= 0) {
         state.items[itemIndex].quantity++;
       } else {
         state.items.push({...action.payload, quantity: 1});
       }
+      console.log(state.items)
     },
     removePanier: (state, action) => {
       state.items = state.items.filter(item => item.id !== action.payload);
