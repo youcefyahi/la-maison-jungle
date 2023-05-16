@@ -1,6 +1,8 @@
 import SingleArticle from "@/app/components/SingleArticle"
 
 
+
+
 const Plante = ({ plante }) => {
     return (
         <section>
