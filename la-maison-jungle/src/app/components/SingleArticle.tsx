@@ -9,17 +9,21 @@ import { Plante } from 'lib/prisma/type'
 
 
 
-const SingleArticle = ({ plante }:{plante:Plante}) => {
-store.getState
+const SingleArticle = ({ plante }: { plante: Plante }) => {
+  store.getState
 
-const panierItems = store.getState().items;
 
-  const handleAddToCart = (plante) => {
-    const payload = JSON.stringify(plante)
-    store.dispatch(addPanier(plante));
+
+  const handleAddToCart = () => {
+
+    store.dispatch(addPanier({plante}));
     alert('ca marche ')
-    
+
+
   }
+
+  const panierItems = store.getState();
+  console.log(panierItems)
 
   return <div>
     <p>test</p>{plante.name}

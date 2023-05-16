@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
       } else {
         state.items.push({...action.payload, quantity: 1});
       }
-      console.log(state.items)
+
     },
     removePanier: (state, action) => {
       state.items = state.items.filter(item => item.id !== action.payload);
